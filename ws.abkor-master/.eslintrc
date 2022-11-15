@@ -1,0 +1,22 @@
+{
+    "env": {
+        "es6": true,
+        "node": true
+    },
+    "parserOptions": {
+        "parser": "babel-eslint",
+        "ecmaVersion": 8
+    },
+    "extends": [
+        "eslint:recommended",
+        "prettier",
+        "plugin:prettier/recommended"
+    ],
+    "plugins": [
+        "prettier"
+    ],
+    "rules": {
+        "no-console": "off",
+        "require-atomic-updates": "off",
+    }
+}

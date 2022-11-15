@@ -1,0 +1,49 @@
+{
+    "name": "ws.getup",
+    "version": "1.0.0",
+    "description": "Get Up! Project ebusiness",
+    "author": "Alex Javier Caicedo Porras <acaicedoporras@gmail.com>",
+    "private": true,
+    "engines": {
+        "node": "12.9.0",
+        "npm": "6.10.2"
+    },
+    "main": "index.js",
+    "scripts": {
+        "test": "jest",
+        "dev": "npm run lint && node index.js",
+        "start": "node index.js",
+        "lint": "eslint --ext .js --ignore-path .gitignore ."
+    },
+    "license": "ISC",
+    "devDependencies": {
+        "eslint": "^6.8.0",
+        "eslint-config-prettier": "^6.14.0",
+        "eslint-plugin-prettier": "^3.1.4",
+        "jest": "^24.9.0",
+        "nodemon": "^2.0.6",
+        "prettier": "^1.18.2"
+    },
+    "dependencies": {
+        "@sendgrid/mail": "^6.5.5",
+        "atob": "^2.1.2",
+        "axios": "^0.19.2",
+        "bcrypt": "^3.0.8",
+        "body-parser": "^1.19.0",
+        "btoa": "^1.2.1",
+        "cloudinary": "^1.23.0",
+        "cors": "^2.8.5",
+        "crypto": "^1.0.1",
+        "excel4node": "^1.7.2",
+        "express": "^4.17.1",
+        "is-base64": "^0.1.0",
+        "jsonwebtoken": "^8.5.1",
+        "md5": "^2.3.0",
+        "method-override": "^3.0.0",
+        "moment": "^2.29.1",
+        "mongoose": "^5.10.11",
+        "pug": "^2.0.4",
+        "socket.io": "^2.3.0",
+        "stream-chat": "^1.14.1"
+    }
+}

@@ -1,0 +1,215 @@
+.v-card .card-image .card-precio {
+    position: absolute;
+    top: .5em;
+    right: .6em;
+    max-width: 100%;
+}
+
+.v-card .card-image .card-name {
+  color: black;
+  position: absolute;
+  font-size: 0.9em;
+  top: .1em;
+  max-width: 85%;
+}
+
+.v-card .card-image .card-new {
+  color: #494d4e;
+  position: absolute;
+  font-size: 1em;
+  top: 30%;
+  text-align: center;
+  max-width: 100%;
+}
+
+.v-chip {
+    border-radius: 2px;
+}
+
+.v-chip .v-chip__content {
+    padding: 0 8px;
+}
+
+img.responsive-img, video.responsive-video {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+}
+
+// Dividers
+
+.divider.bottom {
+    // height: 1px;
+    // overflow: hidden;
+    // background-color: #e0e0e0;
+    margin-bottom: 1rem;
+}
+
+//  Blockquote
+
+blockquote {
+    margin: 20px 0;
+    padding-left: 1.5rem;
+    border-left: 5px solid #212121;
+  }
+
+// Positioning
+.valign-wrapper {
+    display: flex;
+    align-items: center;
+  }
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 400;
+}
+
+// Tables
+table, th, td {
+    border: none;
+ }
+ 
+ table {
+   width:100%;
+   display: table;
+ 
+   &.bordered > thead > tr,
+   &.bordered > tbody > tr {
+     border-bottom: 1px solid $table-border-color;
+   }
+ 
+   &.striped > tbody {
+     > tr:nth-child(odd) {
+       background-color: $table-striped-color;
+     }
+ 
+     > tr > td {
+       border-radius: 0;
+     }
+   }
+ 
+   &.highlight > tbody > tr {
+     transition: background-color .25s ease;
+     &:hover {
+       background-color: $table-striped-color;
+     }
+   }
+ 
+   &.centered {
+     thead tr th, tbody tr td {
+       text-align: center;
+     }
+   }
+ 
+ }
+ 
+ thead {
+   border-bottom: 1px solid $table-border-color;
+ }
+ 
+ td, th{
+  //  padding: 15px 5px;
+   display: table-cell;
+   text-align: left;
+   vertical-align: middle;
+   border-radius: 2px;
+ }
+ 
+ // Responsive Table
+ @media #{$medium-and-down} {
+ 
+   table.responsive-table {
+     width: 100%;
+     border-collapse: collapse;
+     border-spacing: 0;
+     display: block;
+     position: relative;
+ 
+     td:empty:before {
+       content: '\00a0';
+     }
+ 
+     th,
+     td {
+       margin: 0;
+       vertical-align: top;
+     }
+ 
+     th { text-align: left; }
+     thead {
+       display: block;
+       float: left;
+ 
+       tr {
+         display: block;
+         padding: 0 10px 0 0;
+ 
+         th::before {
+           content: "\00a0";
+         }
+       }
+     }
+     tbody {
+       display: block;
+       width: auto;
+       position: relative;
+       overflow-x: auto;
+       white-space: nowrap;
+ 
+       tr {
+         display: inline-block;
+         vertical-align: top;
+       }
+     }
+     th {
+       display: block;
+       text-align: right;
+     }
+     td {
+       display: block;
+       min-height: 1.25em;
+       text-align: left;
+     }
+     tr { padding: 0 10px; }
+ 
+     /* sort out borders */
+     thead {
+       border: 0;
+       border-right: 1px solid $table-border-color;
+     }
+ 
+     &.bordered {
+       th { border-bottom: 0; border-left: 0; }
+       td { border-left: 0; border-right: 0; border-bottom: 0; }
+       tr { border: 0; }
+       tbody tr { border-right: 1px solid $table-border-color; }
+     }
+ 
+   }
+ 
+ }
+
+ // No Text Select
+.no-select {
+  user-select: none;
+}
+
+.circle {
+  border-radius: 50%;
+}
+
+.center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.truncate {
+  // display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.no-padding {
+  padding: 0 !important;
+}
